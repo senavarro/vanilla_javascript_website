@@ -1,0 +1,145 @@
+body, html {
+    height: 100%;
+  }
+
+.container{
+    width: 100%;
+}
+
+.right-column{
+    /*Padding pushes the columns away, won't use it */
+    background: #FFFFFF;
+    height: 100vh;
+    width: 50%;
+    max-width: 100%;
+    float: right;
+
+}
+
+.left-column{
+    /*Padding pushes the columns away, won't use it */
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+    max-width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+.top-and-mid{
+    padding-bottom: 200px;
+}
+
+
+.header{
+    font-family: Helvetica; 
+    color: black;
+    font-size: 30px;
+}
+
+
+h1{
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: Helvetica; 
+    color: #FFFFFF;
+    
+}
+
+h2{
+    padding-left: 50px;
+    padding-top: 150px;
+    font-size: 60px;
+    font-family: Helvetica; 
+    color: #FFFFFF;
+}
+
+
+h3{
+    padding-left: 50px;
+    font-family: Helvetica;
+    color: #FFFFFF;
+    padding-top: 5px;
+
+}
+
+h4{
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+
+h4:hover{
+    background-color: #D3D3D3;
+}
+
+.hr-1{
+    margin-left: 50px;
+    width: 5%;
+    background: #FFFFFF;
+}
+
+.hr-2{
+    width: 82%;
+}
+
+.hr-3{
+    color: #A9A9A9;
+}
+
+.questions-content{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify; 
+}
+
+button{
+    font-family: Helvetica; 
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    margin: 0; 
+}
+
+p{
+    font-family: Helvetica; 
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+p.hidden
+{
+   display: none
+}
+
+span.arrow-icon{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    float: right;
+}
+
+
+/* Wanted to create a class that makes the arrow icon to be turned once the "p" is displayed but I didn't have time to do it. 
+Apologies. */
+
+@media screen and (max-width: 600px) {
+      .left-column{
+        width: 100%;
+        height: 800px;
+        float: none;
+      }
+      .right-column{
+        width: 100%;
+        height: auto;
+        float: none;
+      }
+    }
